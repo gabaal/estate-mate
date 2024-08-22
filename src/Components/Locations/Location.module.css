@@ -1,0 +1,46 @@
+.swiper {
+  width: 100% !important;
+  margin-top: 50px;
+}
+
+.location_wrapper {
+  z-index: 1;
+}
+
+.locationCard {
+  max-width: 100%;
+  width: 400px;
+  z-index: 1;
+  position: relative;
+}
+
+.locationCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+  z-index: 1;
+  border-radius: 18px;
+}
+
+.locationCard h2 {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  color: #fff;
+  z-index: 9;
+}
+
+.locationCard h2 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.locationCard img {
+  height: 100%;
+  width: 100%;
+}
