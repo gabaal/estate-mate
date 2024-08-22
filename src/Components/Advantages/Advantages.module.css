@@ -124,6 +124,10 @@
   color: #fff;
 }
 
+.about_btns button:hover:nth-child(2) {
+  border-color: rgb(255, 64, 35);
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
@@ -131,6 +135,17 @@
 
   100% {
     box-shadow: 0px 0px 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .About_wrapper {
+    flex-direction: column;
+  }
+
+  .About_content,
+  .About_img {
+    width: 100%;
   }
 }
 
@@ -149,5 +164,18 @@
   }
   .cards .card img {
     height: 100px;
+  }
+  .Content_Wrapper P {
+    font-size: 14px;
+  }
+  .about_btns {
+    flex-direction: column;
+  }
+  .Experience {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Experience h2 span {
+    font-size: 16px;
   }
 }
